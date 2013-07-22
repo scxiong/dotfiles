@@ -1,5 +1,5 @@
 # .bashrc file
-# By Balaji S. Srinivasan (balajis@stanford.edu)
+# Based on the work of Balaji S. Srinivasan (balajis@stanford.edu)
 #
 # Concepts:
 #
@@ -168,6 +168,9 @@ PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
 ## -- 2) Set up aliases --
 ## -----------------------
 
+# 2.0) Fundamental
+alias sudo="sudo " 
+
 # 2.1) Safety
 alias rm="rm -i"
 alias mv="mv -i"
@@ -189,6 +192,7 @@ alias du='du -ch --max-depth=1'
 alias treeacl='tree -A -C -L 2'
 
 # 2.3) Text and editor commands
+alias gedit='mousepad'   # pretend mousepad is gedit in xubuntu
 alias em='emacs -nw'     # No X11 windows
 alias eqq='emacs -nw -Q' # No config and no X11
 export EDITOR='emacs -nw'

@@ -52,6 +52,7 @@
 ;; -- Macros --
 ;; ------------
 (load "defuns-config.el")
+(normal-erase-is-backspace-mode 0)                     ;; set the Backspace key to behave normally
 (fset 'align-equals "\C-[xalign-regex\C-m=\C-m")
 (global-set-key "\M-=" 'align-equals)
 (global-set-key "\C-x\C-m" 'execute-extended-command)
